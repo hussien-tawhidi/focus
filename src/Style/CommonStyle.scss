@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "./varialble";
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: $dark-black;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+.center-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-center {
+  display: flex;
+  justify-content: center;
+}
+.col-center {
+  display: flex;
+  align-items: center;
+}
+.dir-flex-col {
+  flex-direction: column;
+}
+
+// *************************************************************************** working on page***********
+.working {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .text {
+    color: $dark-white;
+    font-size: 40px;
+    position: relative;
+    font-weight: 800;
+    z-index: 22;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  }
+}

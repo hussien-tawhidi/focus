@@ -1,0 +1,58 @@
+.gift {
+  position: relative;
+  .gift-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .gift-content {
+    color: aliceblue;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    padding: 5rem 2rem;
+    .title {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .gift-desc {
+      width: 80%;
+      margin-left: auto;
+      p {
+        text-align: right;
+        margin: 1rem 0;
+        font-size: 20px;
+      }
+    }
+    .gift-sub-title {
+      font-size: 18px;
+      margin: 10px 0;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media (max-width: $sm-size) {
+  .gift {
+    .gift-content {
+      .title {
+        font-size: 35px;
+      }
+      .gift-desc {
+        p {
+          font-size: 18px;
+        }
+      }
+      .gift-sub-title{
+        font-size: 16px;
+      }
+    }
+  }
+}

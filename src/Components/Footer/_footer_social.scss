@@ -1,0 +1,128 @@
+.footer {
+  padding: 5% 5% 0 5%;
+  background-color: $dark-black;
+  color: $dark-white;
+  overflow: hidden;
+  position: relative;
+  .footer-logo {
+    img {
+      width: 100px;
+    }
+  }
+  .links-title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+  }
+  .footer-fast-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    // height: 20vh;
+    a {
+      opacity: 0.7;
+      font-size: 14px;
+      font-weight: 100;
+      color: $dark-white;
+      text-decoration: none;
+      transition: opacity 0.2s ease-in-out;
+      width: 50%;
+      text-align: right;
+      padding: 5px 10px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .subscribe-part {
+    .subscribe {
+      form {
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          // border-bottom: 1px solid $dark-white;
+          color: $dark-white;
+          text-align: right;
+          width: 100%;
+          padding: 10px;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          background: transparent;
+          border: none;
+          background-color: $dark-white;
+          color: $light-black;
+          padding: 5px 10px;
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+      .footer-social-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin: 3vh 0 0 0;
+        padding-right: 10px;
+        p {
+          margin: 0;
+          padding: 0;
+          margin-left: 1rem;
+          font-size: 14px;
+        }
+        a {
+          opacity: 0.6;
+          color: $dark-white;
+          margin-left: 10px;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .copy-right {
+    text-align: center;
+    margin: 2rem 0 10px 0;
+    p {
+      font-size: 12px;
+      font-weight: 100;
+      color: rgba(150, 150, 150, 0.5);
+    }
+  }
+}
+@media (max-width: $md-size) {
+  .footer {
+    .subscribe-part {
+      .subscribe {
+        .footer-social-icon {
+          padding-right: 0;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $sm-size) {
+  .footer {
+    .footer-logo{
+      margin-bottom: 2rem;
+    }
+  }
+}

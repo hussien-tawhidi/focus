@@ -1,0 +1,99 @@
+.contact {
+  padding: 5% 0;
+  width: 90%;
+  margin: 0 auto;
+  .single-contact {
+    background-color: $dark-white;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    .contact-icon {
+      font-size: 30px;
+      color: $main-red !important;
+      padding: 2rem 0;
+    }
+    .contact-text {
+      p {
+        padding-bottom: 3rem;
+        font-size: 16px;
+      }
+    }
+  }
+  .contact-form {
+    width: 50%;
+    margin: 0 auto;
+    color: $dark-white;
+    background-color: $light-black;
+    padding: 3rem;
+    box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 23px 1px rgba(0, 0, 0, 0.75);
+    .title {
+      text-align: center;
+      font-size: 24px;
+    }
+    .form {
+      input {
+        text-align: right;
+      }
+      #form-text {
+        resize: none;
+        height: 100px;
+      }
+    }
+  }
+}
+@media (max-width: $lg-size) {
+  .contact {
+    .single-contact {
+      width: 90%;
+    }
+    .contact-form{
+        width: 70%;
+    }
+  }
+}
+@media (max-width: $md-size) {
+  .contact {
+    .single-contact {
+      width: 100%;
+      .contact-icon {
+        padding: 1rem 0;
+      }
+      .contact-text {
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    .contact-form{
+        width: 80%;
+    }
+  }
+}
+@media (max-width: $xsm-size) {
+  .contact {
+    .single-contact {
+      .contact-icon {
+        font-size: 25px;
+      }
+      .contact-text {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .contact-form{
+        width: 100%;
+        padding: 1rem;
+        .form{
+            input{
+                font-size: 12px;
+            }
+        }
+    }
+  }
+}
