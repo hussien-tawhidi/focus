@@ -17,7 +17,7 @@ export const packageData = [
     id: 3,
     title: "پکیج شماره 3",
     desc: "تبلیغ از طریق فسبوک",
-    price: "199",
+    price: "149",
     linkTo: "/package-three",
   },
 ];
